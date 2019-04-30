@@ -30,10 +30,8 @@ module.exports = {
       jQuery: "jquery"
     })
   ],
-  watch: true,
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.m?js$/,
         exclude: [/(node_modules|bower_components)/, "/src/js/main.jquery.js"],
         use: {
@@ -43,6 +41,12 @@ module.exports = {
             plugins: ["@babel/plugin-syntax-dynamic-import"]
           }
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [{
+          loader: 'url-loader'
+        }]
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -66,6 +70,9 @@ module.exports = {
               ],
               sourceMap: true
             }
+          },
+          {
+            loader: 'resolve-url-loader'
           },
           {
             loader: "sass-loader", // compiles Sass to CSS

@@ -32,10 +32,12 @@
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "progress-bar-webpack-plugin": "^1.12.1",
+    "resolve-url-loader": "^3.1.0",
     "sass-loader": "^7.1.0",
     "scrollmagic": "^2.0.6",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
     "webpack-merge": "^4.2.1"
   }
