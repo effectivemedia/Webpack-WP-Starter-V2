@@ -1,0 +1,1 @@
+"use strict";$((jQuery,void $(window).scroll(function(){500<=$(window).scrollTop()?$(".site-header").removeClass("large-title").addClass("small-title"):$(".site-header").removeClass("small-title").addClass("large-title")})));

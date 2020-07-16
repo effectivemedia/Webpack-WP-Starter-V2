@@ -27,13 +27,13 @@ add_action('wp_enqueue_scripts', 'enqueue_cust_styles', 11);
 function enqueue_cust_styles()
 {
   wp_register_style(
-    'Webpack-hook-cust-styles', // handle name
-    get_stylesheet_directory_uri() . '/dist/css/styles.bundle.css', // the URL of the stylesheet
+    'cust-styles', // handle name
+    get_stylesheet_directory_uri() . '/dist/css/cust.styles.min.css', // the URL of the stylesheet
     array(), // an array of dependent styles
-    filemtime(get_stylesheet_directory() . '/dist/css/styles.bundle.css') // CacheBuster version number - https://stackoverflow.com/questions/46373184/why-does-home-url-not-work-with-filemtime-in-wordpress
+    filemtime(get_stylesheet_directory() . '/dist/css/cust.styles.min.css') // CacheBuster version number - https://stackoverflow.com/questions/46373184/why-does-home-url-not-work-with-filemtime-in-wordpress
     // CSS media type
   );
-  wp_enqueue_style('Webpack-hook-cust-styles');
+  wp_enqueue_style('cust-styles');
 }
 
 

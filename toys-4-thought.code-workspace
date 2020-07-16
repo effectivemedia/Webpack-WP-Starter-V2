@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "compile-hero.generate-minified-javascript": true,
+    "compile-hero.generate-minified-css": true,
+    "compile-hero.javascript-output-directory": "../../dist/js",
+    "compile-hero.jade-output-directory": "../../dist",
+    "compile-hero.sass-output-directory": "../../dist/css",
+    "compile-hero.scss-output-directory": "../../dist/css",
+    "compile-hero.typescriptx-output-directory": "../../dist/js",
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.sass-output-toggle": false,
+    "compile-hero.scss-output-toggle": false,
+    "liveSassCompile.settings.formats": [
+      {
+        "extensionName": ".min.css",
+        "format": "compressed",
+        "savePath": "/dist/css"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+      ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+  }
+}

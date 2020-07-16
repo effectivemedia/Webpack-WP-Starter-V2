@@ -15,7 +15,7 @@
 require_once get_template_directory() . '/lib/init.php';
 
 // Defines the child theme (do not remove).
-define('CHILD_THEME_NAME', 'Sue My Spouse');
+define('CHILD_THEME_NAME', 'Toys 4 Thought');
 define('CHILD_THEME_URL', 'https://www.studiopress.com/');
 define('CHILD_THEME_VERSION', '2.8.0');
 

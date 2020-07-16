@@ -1,0 +1,1 @@
+"use strict";var testScript=function(t){return t?"YAY!":"BOO"};console.log(testScript(!1));
